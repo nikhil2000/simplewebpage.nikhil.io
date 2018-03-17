@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+	function validate() {
+    var name = document.forms["myform"]["name"].value;
+	var password = document.forms["myform"]["password"].value;
+    if (name== "" || password=="") {
+	    if (password=="") {
+        alert("password must be filled out");
+        return false;
+    }
+        alert("Name must be filled out");
+        return false;
+    }
+	 
+}
+					  
+</script>
+</head>				  
+<body>
+     <form action="index2.html" name="myform" method="post" onsubmit="return validate()" >
+	     name:<input type="text" name= "name" id="name"/>
+		 password:<input type="password" name= "password" id="password"/>
+		
+	     <input type = "submit" value= "login"/>
+	 </form>
+</body>
+</html>
+  
